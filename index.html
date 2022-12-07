@@ -5,13 +5,26 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>PesateTu</title>
 </head>
 
 <body>
   <div class="container text-red-500" id="app">
-    <h1>Pésate Tu</h1>
-    
+    <h1>Calcula tu IMC</h1>
+    <div>
+      <label for="height">
+        Estatura: <input type="text" placeholder="180" id="height" name="height"> cm
+      </label> 
+    </div>
+    <div class="flex gap-4">
+      <label for="weight" class="flex gap-4">
+        Peso: <input type="range" min="1" max="300" value="80" id="weight">
+        <div id="weightValue">80</div> kg
+     </label>
+    </div>
+    <div class="flex gap-4">
+      <p>Indice de masa corporal:</p> <div id="result">...</div>
+    </div>
   </div>
 
 
